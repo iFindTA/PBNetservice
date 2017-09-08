@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PBNetService"
-  s.version      = "3.1.0"
+  s.version      = "3.3.0"
   s.summary      = "network service for iOS development."
   s.description  = "network service for FLK.Inc iOS Developers, such as GET/POST/PUT etc."
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   #s.source       = { :git => "http://192.168.10.99/iOSKits/NetServicePro.git", :tag => "#{s.version}" }
   s.source       = { :git => "http://192.168.10.99/iOSKits/NetServicePro.git", :tag => "#{s.version}" }
   s.source_files  = "PBNetService/Pod/PublicClasses/*.{h,m}","PBNetService/Pod/Category/NSURLSessionTask/*.{h,m}"
-  s.public_header_files = "PBNetService/Pod/PublicClasses/**/*.h","PBNetService/Pod/Category/NSURLSessionTask/*.h"
+  s.public_header_files = "PBNetService/Pod/PublicClasses/*.h","PBNetService/Pod/Category/NSURLSessionTask/*.h"
 
   s.resources    = "PBNetService/Pod/Assets/*.*"
 
