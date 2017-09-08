@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
   #s.source       = { :git => "http://192.168.10.99/iOSKits/NetServicePro.git", :tag => "#{s.version}" }
-  s.source       = { :git => "http://192.168.10.99/iOSKits/NetServicePro.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/iFindTA/PBNetservice.git", :tag => "#{s.version}" }
   s.source_files  = "PBNetService/Pod/PublicClasses/*.{h,m}","PBNetService/Pod/Category/NSURLSessionTask/*.{h,m}"
   s.public_header_files = "PBNetService/Pod/PublicClasses/*.h","PBNetService/Pod/Category/NSURLSessionTask/*.h"
 
