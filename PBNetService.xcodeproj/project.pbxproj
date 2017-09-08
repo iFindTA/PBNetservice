@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F683080CAD86A558A1603A9 /* libPods-PBNetService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66121C97DBEAE2FCF786EA8B /* libPods-PBNetService.a */; };
 		60C815281F62326500CEC5D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815271F62326500CEC5D6 /* main.m */; };
 		60C8152B1F62326600CEC5D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8152A1F62326600CEC5D6 /* AppDelegate.m */; };
 		60C8152E1F62326600CEC5D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8152D1F62326600CEC5D6 /* ViewController.m */; };
@@ -15,6 +16,14 @@
 		60C815361F62326800CEC5D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C815341F62326800CEC5D6 /* LaunchScreen.storyboard */; };
 		60C815411F62326800CEC5D6 /* PBNetServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815401F62326800CEC5D6 /* PBNetServiceTests.m */; };
 		60C8154C1F62326900CEC5D6 /* PBNetServiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8154B1F62326900CEC5D6 /* PBNetServiceUITests.m */; };
+		60C8156D1F6233C600CEC5D6 /* balanceMap.json in Resources */ = {isa = PBXBuildFile; fileRef = 60C8155B1F6233C600CEC5D6 /* balanceMap.json */; };
+		60C8156E1F6233C600CEC5D6 /* flk_dev.cer in Resources */ = {isa = PBXBuildFile; fileRef = 60C8155C1F6233C600CEC5D6 /* flk_dev.cer */; };
+		60C8156F1F6233C600CEC5D6 /* flk_test.cer in Resources */ = {isa = PBXBuildFile; fileRef = 60C8155D1F6233C600CEC5D6 /* flk_test.cer */; };
+		60C815701F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815611F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m */; };
+		60C815711F6233C600CEC5D6 /* FLKNetCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815651F6233C600CEC5D6 /* FLKNetCore.m */; };
+		60C815721F6233C600CEC5D6 /* FLKSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815671F6233C600CEC5D6 /* FLKSecurityPolicy.m */; };
+		60C815731F6233C600CEC5D6 /* FLKNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815691F6233C600CEC5D6 /* FLKNetService.m */; };
+		60C815741F6233C600CEC5D6 /* PBNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8156C1F6233C600CEC5D6 /* PBNetService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14097660FD12C1ECA7BF0077 /* Pods-PBNetService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService.debug.xcconfig"; sourceTree = "<group>"; };
 		60C815231F62326400CEC5D6 /* PBNetService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBNetService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C815271F62326500CEC5D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60C815291F62326500CEC5D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +61,21 @@
 		60C815471F62326900CEC5D6 /* PBNetServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBNetServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C8154B1F62326900CEC5D6 /* PBNetServiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBNetServiceUITests.m; sourceTree = "<group>"; };
 		60C8154D1F62326900CEC5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C8155B1F6233C600CEC5D6 /* balanceMap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = balanceMap.json; sourceTree = "<group>"; };
+		60C8155C1F6233C600CEC5D6 /* flk_dev.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = flk_dev.cer; sourceTree = "<group>"; };
+		60C8155D1F6233C600CEC5D6 /* flk_test.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = flk_test.cer; sourceTree = "<group>"; };
+		60C815601F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+PBHelper.h"; sourceTree = "<group>"; };
+		60C815611F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+PBHelper.m"; sourceTree = "<group>"; };
+		60C815641F6233C600CEC5D6 /* FLKNetCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLKNetCore.h; sourceTree = "<group>"; };
+		60C815651F6233C600CEC5D6 /* FLKNetCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKNetCore.m; sourceTree = "<group>"; };
+		60C815661F6233C600CEC5D6 /* FLKSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLKSecurityPolicy.h; sourceTree = "<group>"; };
+		60C815671F6233C600CEC5D6 /* FLKSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKSecurityPolicy.m; sourceTree = "<group>"; };
+		60C815681F6233C600CEC5D6 /* FLKNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLKNetService.h; sourceTree = "<group>"; };
+		60C815691F6233C600CEC5D6 /* FLKNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKNetService.m; sourceTree = "<group>"; };
+		60C8156B1F6233C600CEC5D6 /* PBNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNetService.h; sourceTree = "<group>"; };
+		60C8156C1F6233C600CEC5D6 /* PBNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNetService.m; sourceTree = "<group>"; };
+		62B80142B8BB1876C7740EC2 /* Pods-PBNetService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetService.release.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService.release.xcconfig"; sourceTree = "<group>"; };
+		66121C97DBEAE2FCF786EA8B /* libPods-PBNetService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBNetService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F683080CAD86A558A1603A9 /* libPods-PBNetService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BF132FC06EEB39D48CD4BA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14097660FD12C1ECA7BF0077 /* Pods-PBNetService.debug.xcconfig */,
+				62B80142B8BB1876C7740EC2 /* Pods-PBNetService.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		60C8151A1F62326400CEC5D6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +120,8 @@
 				60C8153F1F62326800CEC5D6 /* PBNetServiceTests */,
 				60C8154A1F62326900CEC5D6 /* PBNetServiceUITests */,
 				60C815241F62326400CEC5D6 /* Products */,
+				1BF132FC06EEB39D48CD4BA4 /* Pods */,
+				9589B12E3B5E19B6AE831F55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +138,7 @@
 		60C815251F62326400CEC5D6 /* PBNetService */ = {
 			isa = PBXGroup;
 			children = (
+				60C815591F6233C600CEC5D6 /* Pod */,
 				60C815291F62326500CEC5D6 /* AppDelegate.h */,
 				60C8152A1F62326600CEC5D6 /* AppDelegate.m */,
 				60C8152C1F62326600CEC5D6 /* ViewController.h */,
@@ -140,6 +178,82 @@
 			path = PBNetServiceUITests;
 			sourceTree = "<group>";
 		};
+		60C815591F6233C600CEC5D6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				60C8155A1F6233C600CEC5D6 /* Assets */,
+				60C8155E1F6233C600CEC5D6 /* Category */,
+				60C815621F6233C600CEC5D6 /* Classes */,
+				60C8156A1F6233C600CEC5D6 /* PublicClasses */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		60C8155A1F6233C600CEC5D6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				60C8155B1F6233C600CEC5D6 /* balanceMap.json */,
+				60C8155C1F6233C600CEC5D6 /* flk_dev.cer */,
+				60C8155D1F6233C600CEC5D6 /* flk_test.cer */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		60C8155E1F6233C600CEC5D6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				60C8155F1F6233C600CEC5D6 /* NSURLSessionTask */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		60C8155F1F6233C600CEC5D6 /* NSURLSessionTask */ = {
+			isa = PBXGroup;
+			children = (
+				60C815601F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.h */,
+				60C815611F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m */,
+			);
+			path = NSURLSessionTask;
+			sourceTree = "<group>";
+		};
+		60C815621F6233C600CEC5D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60C815631F6233C600CEC5D6 /* Core */,
+				60C815681F6233C600CEC5D6 /* FLKNetService.h */,
+				60C815691F6233C600CEC5D6 /* FLKNetService.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		60C815631F6233C600CEC5D6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				60C815641F6233C600CEC5D6 /* FLKNetCore.h */,
+				60C815651F6233C600CEC5D6 /* FLKNetCore.m */,
+				60C815661F6233C600CEC5D6 /* FLKSecurityPolicy.h */,
+				60C815671F6233C600CEC5D6 /* FLKSecurityPolicy.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		60C8156A1F6233C600CEC5D6 /* PublicClasses */ = {
+			isa = PBXGroup;
+			children = (
+				60C8156B1F6233C600CEC5D6 /* PBNetService.h */,
+				60C8156C1F6233C600CEC5D6 /* PBNetService.m */,
+			);
+			path = PublicClasses;
+			sourceTree = "<group>";
+		};
+		9589B12E3B5E19B6AE831F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66121C97DBEAE2FCF786EA8B /* libPods-PBNetService.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60C815501F62326900CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetService" */;
 			buildPhases = (
+				67E6AFE3E10CACA770DA1E86 /* [CP] Check Pods Manifest.lock */,
 				60C8151F1F62326400CEC5D6 /* Sources */,
 				60C815201F62326400CEC5D6 /* Frameworks */,
 				60C815211F62326400CEC5D6 /* Resources */,
+				4AD78E343623497EB9D46B47 /* [CP] Embed Pods Frameworks */,
+				C3FE9810907C9A63AF6FC621 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,9 +366,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C8156E1F6233C600CEC5D6 /* flk_dev.cer in Resources */,
 				60C815361F62326800CEC5D6 /* LaunchScreen.storyboard in Resources */,
+				60C8156F1F6233C600CEC5D6 /* flk_test.cer in Resources */,
 				60C815331F62326800CEC5D6 /* Assets.xcassets in Resources */,
 				60C815311F62326700CEC5D6 /* Main.storyboard in Resources */,
+				60C8156D1F6233C600CEC5D6 /* balanceMap.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,13 +391,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AD78E343623497EB9D46B47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E6AFE3E10CACA770DA1E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3FE9810907C9A63AF6FC621 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60C8151F1F62326400CEC5D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				60C8152E1F62326600CEC5D6 /* ViewController.m in Sources */,
+				60C815721F6233C600CEC5D6 /* FLKSecurityPolicy.m in Sources */,
 				60C8152B1F62326600CEC5D6 /* AppDelegate.m in Sources */,
+				60C815741F6233C600CEC5D6 /* PBNetService.m in Sources */,
+				60C815701F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */,
+				60C815731F6233C600CEC5D6 /* FLKNetService.m in Sources */,
+				60C815711F6233C600CEC5D6 /* FLKNetCore.m in Sources */,
 				60C815281F62326500CEC5D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +600,7 @@
 		};
 		60C815511F62326900CEC5D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14097660FD12C1ECA7BF0077 /* Pods-PBNetService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M8K6A7692X;
@@ -440,6 +614,7 @@
 		};
 		60C815521F62326900CEC5D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B80142B8BB1876C7740EC2 /* Pods-PBNetService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M8K6A7692X;
@@ -520,6 +695,7 @@
 				60C815521F62326900CEC5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60C815531F62326900CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetServiceTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +704,7 @@
 				60C815551F62326900CEC5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60C815561F62326900CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetServiceUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +713,7 @@
 				60C815581F62326900CEC5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
