@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PBNetService"
-  s.version      = "3.3.0"
+  s.version      = "4.0.0"
   s.summary      = "network service for iOS development."
   s.description  = "network service for FLK.Inc iOS Developers, such as GET/POST/PUT etc."
 
