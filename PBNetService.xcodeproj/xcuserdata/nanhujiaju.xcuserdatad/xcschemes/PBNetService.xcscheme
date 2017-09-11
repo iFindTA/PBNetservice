@@ -48,6 +48,16 @@
                ReferencedContainer = "container:PBNetService.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "60C818591F629A9A00CEC5D6"
+               BuildableName = "PBNetRouterTests.xctest"
+               BlueprintName = "PBNetRouterTests"
+               ReferencedContainer = "container:PBNetService.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

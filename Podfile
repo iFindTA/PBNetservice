@@ -8,3 +8,9 @@ pod 'AFNetworking', '~> 3.1.0'
 pod 'SVProgressHUD', '~> 2.0.3'
 pod 'PBMulticastDelegate', '~> 1.1.0'
 end
+
+target 'PBNetRouter' do
+pod 'PBKits', '~> 1.2.0'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SVProgressHUD', '~> 2.0.3'
+end

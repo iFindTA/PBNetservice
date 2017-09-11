@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B69D35F248E5598FA675BF6387719F18'
-               BlueprintName = 'SVProgressHUD'
+               BlueprintIdentifier = '72DFAD85FCCB9A935F3F37559C75E348'
+               BlueprintName = 'Pods-PBNetRouter'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libSVProgressHUD.a'>
+               BuildableName = 'libPods-PBNetRouter.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

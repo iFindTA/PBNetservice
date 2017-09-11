@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PBNetRouter.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>PBNetService.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>60C815461F62326900CEC5D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60C818511F629A9A00CEC5D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60C818591F629A9A00CEC5D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

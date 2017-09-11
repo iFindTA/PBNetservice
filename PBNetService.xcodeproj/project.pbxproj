@@ -24,6 +24,18 @@
 		60C815721F6233C600CEC5D6 /* FLKSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815671F6233C600CEC5D6 /* FLKSecurityPolicy.m */; };
 		60C815731F6233C600CEC5D6 /* FLKNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815691F6233C600CEC5D6 /* FLKNetService.m */; };
 		60C815741F6233C600CEC5D6 /* PBNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8156C1F6233C600CEC5D6 /* PBNetService.m */; };
+		60C8185B1F629A9A00CEC5D6 /* PBNetRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */; };
+		60C818621F629A9A00CEC5D6 /* PBNetRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C818611F629A9A00CEC5D6 /* PBNetRouterTests.m */; };
+		60C818641F629A9A00CEC5D6 /* PBNetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C818541F629A9A00CEC5D6 /* PBNetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60C818671F629A9A00CEC5D6 /* PBNetRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */; };
+		60C818681F629A9A00CEC5D6 /* PBNetRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60C818701F629B2000CEC5D6 /* balanceMap.json in Resources */ = {isa = PBXBuildFile; fileRef = 60C8155B1F6233C600CEC5D6 /* balanceMap.json */; };
+		60C818711F629B2000CEC5D6 /* flk_dev.cer in Resources */ = {isa = PBXBuildFile; fileRef = 60C8155C1F6233C600CEC5D6 /* flk_dev.cer */; };
+		60C818721F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C815601F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.h */; };
+		60C818731F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815611F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m */; };
+		60C818741F629B2000CEC5D6 /* PBNetService.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C8156B1F6233C600CEC5D6 /* PBNetService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60C818751F629B2000CEC5D6 /* PBNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8156C1F6233C600CEC5D6 /* PBNetService.m */; };
+		C88B902230997B4DAB0D94EB /* libPods-PBNetRouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D625915D2476B926D21E9D1 /* libPods-PBNetRouter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +53,42 @@
 			remoteGlobalIDString = 60C815221F62326400CEC5D6;
 			remoteInfo = PBNetService;
 		};
+		60C8185C1F629A9A00CEC5D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60C8151B1F62326400CEC5D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C818511F629A9A00CEC5D6;
+			remoteInfo = PBNetRouter;
+		};
+		60C8185E1F629A9A00CEC5D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60C8151B1F62326400CEC5D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C815221F62326400CEC5D6;
+			remoteInfo = PBNetService;
+		};
+		60C818651F629A9A00CEC5D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60C8151B1F62326400CEC5D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C818511F629A9A00CEC5D6;
+			remoteInfo = PBNetRouter;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60C8186E1F629A9A00CEC5D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60C818681F629A9A00CEC5D6 /* PBNetRouter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14097660FD12C1ECA7BF0077 /* Pods-PBNetService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,8 +121,17 @@
 		60C815691F6233C600CEC5D6 /* FLKNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKNetService.m; sourceTree = "<group>"; };
 		60C8156B1F6233C600CEC5D6 /* PBNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNetService.h; sourceTree = "<group>"; };
 		60C8156C1F6233C600CEC5D6 /* PBNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNetService.m; sourceTree = "<group>"; };
+		60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBNetRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C818541F629A9A00CEC5D6 /* PBNetRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBNetRouter.h; sourceTree = "<group>"; };
+		60C818551F629A9A00CEC5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C8185A1F629A9A00CEC5D6 /* PBNetRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBNetRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C818611F629A9A00CEC5D6 /* PBNetRouterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBNetRouterTests.m; sourceTree = "<group>"; };
+		60C818631F629A9A00CEC5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62B80142B8BB1876C7740EC2 /* Pods-PBNetService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetService.release.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService.release.xcconfig"; sourceTree = "<group>"; };
 		66121C97DBEAE2FCF786EA8B /* libPods-PBNetService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBNetService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D625915D2476B926D21E9D1 /* libPods-PBNetRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBNetRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98802F7B0673B56DA1857A9D /* Pods-PBNetRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetRouter.release.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetRouter/Pods-PBNetRouter.release.xcconfig"; sourceTree = "<group>"; };
+		98C166646E3C8E15BBCC56AD /* Pods-PBNetRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetRouter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetRouter/Pods-PBNetRouter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F683080CAD86A558A1603A9 /* libPods-PBNetService.a in Frameworks */,
+				60C818671F629A9A00CEC5D6 /* PBNetRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +158,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60C8184E1F629A9A00CEC5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88B902230997B4DAB0D94EB /* libPods-PBNetRouter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C818571F629A9A00CEC5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C8185B1F629A9A00CEC5D6 /* PBNetRouter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,6 +182,8 @@
 			children = (
 				14097660FD12C1ECA7BF0077 /* Pods-PBNetService.debug.xcconfig */,
 				62B80142B8BB1876C7740EC2 /* Pods-PBNetService.release.xcconfig */,
+				98C166646E3C8E15BBCC56AD /* Pods-PBNetRouter.debug.xcconfig */,
+				98802F7B0673B56DA1857A9D /* Pods-PBNetRouter.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -119,6 +194,8 @@
 				60C815251F62326400CEC5D6 /* PBNetService */,
 				60C8153F1F62326800CEC5D6 /* PBNetServiceTests */,
 				60C8154A1F62326900CEC5D6 /* PBNetServiceUITests */,
+				60C818531F629A9A00CEC5D6 /* PBNetRouter */,
+				60C818601F629A9A00CEC5D6 /* PBNetRouterTests */,
 				60C815241F62326400CEC5D6 /* Products */,
 				1BF132FC06EEB39D48CD4BA4 /* Pods */,
 				9589B12E3B5E19B6AE831F55 /* Frameworks */,
@@ -131,6 +208,8 @@
 				60C815231F62326400CEC5D6 /* PBNetService.app */,
 				60C8153C1F62326800CEC5D6 /* PBNetServiceTests.xctest */,
 				60C815471F62326900CEC5D6 /* PBNetServiceUITests.xctest */,
+				60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */,
+				60C8185A1F629A9A00CEC5D6 /* PBNetRouterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,15 +325,47 @@
 			path = PublicClasses;
 			sourceTree = "<group>";
 		};
+		60C818531F629A9A00CEC5D6 /* PBNetRouter */ = {
+			isa = PBXGroup;
+			children = (
+				60C818541F629A9A00CEC5D6 /* PBNetRouter.h */,
+				60C818551F629A9A00CEC5D6 /* Info.plist */,
+			);
+			path = PBNetRouter;
+			sourceTree = "<group>";
+		};
+		60C818601F629A9A00CEC5D6 /* PBNetRouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				60C818611F629A9A00CEC5D6 /* PBNetRouterTests.m */,
+				60C818631F629A9A00CEC5D6 /* Info.plist */,
+			);
+			path = PBNetRouterTests;
+			sourceTree = "<group>";
+		};
 		9589B12E3B5E19B6AE831F55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				66121C97DBEAE2FCF786EA8B /* libPods-PBNetService.a */,
+				7D625915D2476B926D21E9D1 /* libPods-PBNetRouter.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60C8184F1F629A9A00CEC5D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C818641F629A9A00CEC5D6 /* PBNetRouter.h in Headers */,
+				60C818741F629B2000CEC5D6 /* PBNetService.h in Headers */,
+				60C818721F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		60C815221F62326400CEC5D6 /* PBNetService */ = {
@@ -267,10 +378,12 @@
 				60C815211F62326400CEC5D6 /* Resources */,
 				4AD78E343623497EB9D46B47 /* [CP] Embed Pods Frameworks */,
 				C3FE9810907C9A63AF6FC621 /* [CP] Copy Pods Resources */,
+				60C8186E1F629A9A00CEC5D6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				60C818661F629A9A00CEC5D6 /* PBXTargetDependency */,
 			);
 			name = PBNetService;
 			productName = PBNetService;
@@ -313,6 +426,45 @@
 			productReference = 60C815471F62326900CEC5D6 /* PBNetServiceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		60C818511F629A9A00CEC5D6 /* PBNetRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C8186D1F629A9A00CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetRouter" */;
+			buildPhases = (
+				C04BB79492524CEDBA91EF1D /* [CP] Check Pods Manifest.lock */,
+				60C8184D1F629A9A00CEC5D6 /* Sources */,
+				60C8184E1F629A9A00CEC5D6 /* Frameworks */,
+				60C8184F1F629A9A00CEC5D6 /* Headers */,
+				60C818501F629A9A00CEC5D6 /* Resources */,
+				81F4B57E044437FC4E8002C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PBNetRouter;
+			productName = PBNetRouter;
+			productReference = 60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60C818591F629A9A00CEC5D6 /* PBNetRouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C8186F1F629A9A00CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetRouterTests" */;
+			buildPhases = (
+				60C818561F629A9A00CEC5D6 /* Sources */,
+				60C818571F629A9A00CEC5D6 /* Frameworks */,
+				60C818581F629A9A00CEC5D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60C8185D1F629A9A00CEC5D6 /* PBXTargetDependency */,
+				60C8185F1F629A9A00CEC5D6 /* PBXTargetDependency */,
+			);
+			name = PBNetRouterTests;
+			productName = PBNetRouterTests;
+			productReference = 60C8185A1F629A9A00CEC5D6 /* PBNetRouterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,6 +491,17 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 60C815221F62326400CEC5D6;
 					};
+					60C818511F629A9A00CEC5D6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M8K6A7692X;
+						ProvisioningStyle = Automatic;
+					};
+					60C818591F629A9A00CEC5D6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M8K6A7692X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 60C815221F62326400CEC5D6;
+					};
 				};
 			};
 			buildConfigurationList = 60C8151E1F62326400CEC5D6 /* Build configuration list for PBXProject "PBNetService" */;
@@ -357,6 +520,8 @@
 				60C815221F62326400CEC5D6 /* PBNetService */,
 				60C8153B1F62326800CEC5D6 /* PBNetServiceTests */,
 				60C815461F62326900CEC5D6 /* PBNetServiceUITests */,
+				60C818511F629A9A00CEC5D6 /* PBNetRouter */,
+				60C818591F629A9A00CEC5D6 /* PBNetRouterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -389,6 +554,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60C818501F629A9A00CEC5D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C818701F629B2000CEC5D6 /* balanceMap.json in Resources */,
+				60C818711F629B2000CEC5D6 /* flk_dev.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C818581F629A9A00CEC5D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -408,6 +589,36 @@
 			showEnvVarsInLog = 0;
 		};
 		67E6AFE3E10CACA770DA1E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81F4B57E044437FC4E8002C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PBNetRouter/Pods-PBNetRouter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C04BB79492524CEDBA91EF1D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,6 +682,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60C8184D1F629A9A00CEC5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C818731F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */,
+				60C818751F629B2000CEC5D6 /* PBNetService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C818561F629A9A00CEC5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C818621F629A9A00CEC5D6 /* PBNetRouterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -483,6 +711,21 @@
 			isa = PBXTargetDependency;
 			target = 60C815221F62326400CEC5D6 /* PBNetService */;
 			targetProxy = 60C815481F62326900CEC5D6 /* PBXContainerItemProxy */;
+		};
+		60C8185D1F629A9A00CEC5D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60C818511F629A9A00CEC5D6 /* PBNetRouter */;
+			targetProxy = 60C8185C1F629A9A00CEC5D6 /* PBXContainerItemProxy */;
+		};
+		60C8185F1F629A9A00CEC5D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60C815221F62326400CEC5D6 /* PBNetService */;
+			targetProxy = 60C8185E1F629A9A00CEC5D6 /* PBXContainerItemProxy */;
+		};
+		60C818661F629A9A00CEC5D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60C818511F629A9A00CEC5D6 /* PBNetRouter */;
+			targetProxy = 60C818651F629A9A00CEC5D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -676,6 +919,76 @@
 			};
 			name = Release;
 		};
+		60C818691F629A9A00CEC5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C166646E3C8E15BBCC56AD /* Pods-PBNetRouter.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M8K6A7692X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PBNetRouter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanhu.PBNetRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60C8186A1F629A9A00CEC5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98802F7B0673B56DA1857A9D /* Pods-PBNetRouter.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M8K6A7692X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PBNetRouter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanhu.PBNetRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60C8186B1F629A9A00CEC5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M8K6A7692X;
+				INFOPLIST_FILE = PBNetRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanhu.PBNetRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PBNetService.app/PBNetService";
+			};
+			name = Debug;
+		};
+		60C8186C1F629A9A00CEC5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M8K6A7692X;
+				INFOPLIST_FILE = PBNetRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanhu.PBNetRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PBNetService.app/PBNetService";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -714,6 +1027,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		60C8186D1F629A9A00CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C818691F629A9A00CEC5D6 /* Debug */,
+				60C8186A1F629A9A00CEC5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60C8186F1F629A9A00CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetRouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C8186B1F629A9A00CEC5D6 /* Debug */,
+				60C8186C1F629A9A00CEC5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
