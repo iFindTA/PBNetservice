@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FLKNetService.h"
 #import <PBKits/PBKits.h>
+#import "PBService.h"
 
 @interface ViewController ()
 
@@ -22,10 +23,21 @@
     
     NSLog(@"home:%@", NSHomeDirectory());
     
-    FLKNetConfiguration *cfg = [FLKNetConfiguration defaultConfiguration];
-    cfg.debugDomain = @"http://demo.qiyemixin.com/";
-    [FLKNetworkManager startWithConfiguration:cfg];
+//    FLKNetConfiguration *cfg = [FLKNetConfiguration defaultConfiguration];
+//    cfg.debugDomain = @"http://demo.qiyemixin.com/";
+//    [FLKNetworkManager startWithConfiguration:cfg];
     
+    //test for protobuf
+    NSString *baseString = @"https://v2.api.chinaxqjy.com";
+    [PBService configBaseURL:baseString];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 100, 200, 50);
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn setTitle:@"Protobuf" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(protobufTest) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    //
 }
 
 - (IBAction)signInAction:(id)sender {
@@ -94,6 +106,14 @@
     NSString *token = [resObj objectForKey:@"token"];
     //[FLKNetworkManager updateAuthoziedToken:@"688cdc6d2388b5f2ac785269e3473159" forKey:@"Authorization"];
     [FLKNetworkManager updateAuthoziedToken:token forKey:@"Authorization"];
+}
+
+#pragma mark --- ProtoBuf test ---
+
+- (void)protobufTest {
+    NSLog(@"test for protobuf");
+    
+    [[PBService shared] test4Protobuf];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F683080CAD86A558A1603A9 /* libPods-PBNetService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66121C97DBEAE2FCF786EA8B /* libPods-PBNetService.a */; };
+		60833915207640E400BD565E /* PBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60833913207640E400BD565E /* PBService.m */; };
 		60C815281F62326500CEC5D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815271F62326500CEC5D6 /* main.m */; };
 		60C8152B1F62326600CEC5D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8152A1F62326600CEC5D6 /* AppDelegate.m */; };
 		60C8152E1F62326600CEC5D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8152D1F62326600CEC5D6 /* ViewController.m */; };
@@ -23,7 +24,6 @@
 		60C815711F6233C600CEC5D6 /* FLKNetCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815651F6233C600CEC5D6 /* FLKNetCore.m */; };
 		60C815721F6233C600CEC5D6 /* FLKSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815671F6233C600CEC5D6 /* FLKSecurityPolicy.m */; };
 		60C815731F6233C600CEC5D6 /* FLKNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815691F6233C600CEC5D6 /* FLKNetService.m */; };
-		60C815741F6233C600CEC5D6 /* PBNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8156C1F6233C600CEC5D6 /* PBNetService.m */; };
 		60C8185B1F629A9A00CEC5D6 /* PBNetRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */; };
 		60C818621F629A9A00CEC5D6 /* PBNetRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C818611F629A9A00CEC5D6 /* PBNetRouterTests.m */; };
 		60C818641F629A9A00CEC5D6 /* PBNetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C818541F629A9A00CEC5D6 /* PBNetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,8 +33,6 @@
 		60C818711F629B2000CEC5D6 /* flk_dev.cer in Resources */ = {isa = PBXBuildFile; fileRef = 60C8155C1F6233C600CEC5D6 /* flk_dev.cer */; };
 		60C818721F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C815601F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.h */; };
 		60C818731F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815611F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m */; };
-		60C818741F629B2000CEC5D6 /* PBNetService.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C8156B1F6233C600CEC5D6 /* PBNetService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60C818751F629B2000CEC5D6 /* PBNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8156C1F6233C600CEC5D6 /* PBNetService.m */; };
 		C88B902230997B4DAB0D94EB /* libPods-PBNetRouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D625915D2476B926D21E9D1 /* libPods-PBNetRouter.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +90,8 @@
 
 /* Begin PBXFileReference section */
 		14097660FD12C1ECA7BF0077 /* Pods-PBNetService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService.debug.xcconfig"; sourceTree = "<group>"; };
+		60833912207640E400BD565E /* PBService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBService.h; sourceTree = "<group>"; };
+		60833913207640E400BD565E /* PBService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBService.m; sourceTree = "<group>"; };
 		60C815231F62326400CEC5D6 /* PBNetService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBNetService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C815271F62326500CEC5D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60C815291F62326500CEC5D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,8 +119,6 @@
 		60C815671F6233C600CEC5D6 /* FLKSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKSecurityPolicy.m; sourceTree = "<group>"; };
 		60C815681F6233C600CEC5D6 /* FLKNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLKNetService.h; sourceTree = "<group>"; };
 		60C815691F6233C600CEC5D6 /* FLKNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKNetService.m; sourceTree = "<group>"; };
-		60C8156B1F6233C600CEC5D6 /* PBNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNetService.h; sourceTree = "<group>"; };
-		60C8156C1F6233C600CEC5D6 /* PBNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNetService.m; sourceTree = "<group>"; };
 		60C818521F629A9A00CEC5D6 /* PBNetRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBNetRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C818541F629A9A00CEC5D6 /* PBNetRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBNetRouter.h; sourceTree = "<group>"; };
 		60C818551F629A9A00CEC5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +184,15 @@
 				98802F7B0673B56DA1857A9D /* Pods-PBNetRouter.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		60833911207640C500BD565E /* PBService */ = {
+			isa = PBXGroup;
+			children = (
+				60833912207640E400BD565E /* PBService.h */,
+				60833913207640E400BD565E /* PBService.m */,
+			);
+			path = PBService;
 			sourceTree = "<group>";
 		};
 		60C8151A1F62326400CEC5D6 = {
@@ -260,10 +267,10 @@
 		60C815591F6233C600CEC5D6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				60833911207640C500BD565E /* PBService */,
 				60C8155A1F6233C600CEC5D6 /* Assets */,
 				60C8155E1F6233C600CEC5D6 /* Category */,
 				60C815621F6233C600CEC5D6 /* Classes */,
-				60C8156A1F6233C600CEC5D6 /* PublicClasses */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -316,15 +323,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		60C8156A1F6233C600CEC5D6 /* PublicClasses */ = {
-			isa = PBXGroup;
-			children = (
-				60C8156B1F6233C600CEC5D6 /* PBNetService.h */,
-				60C8156C1F6233C600CEC5D6 /* PBNetService.m */,
-			);
-			path = PublicClasses;
-			sourceTree = "<group>";
-		};
 		60C818531F629A9A00CEC5D6 /* PBNetRouter */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,7 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C818641F629A9A00CEC5D6 /* PBNetRouter.h in Headers */,
-				60C818741F629B2000CEC5D6 /* PBNetService.h in Headers */,
 				60C818721F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,7 +655,7 @@
 				60C8152E1F62326600CEC5D6 /* ViewController.m in Sources */,
 				60C815721F6233C600CEC5D6 /* FLKSecurityPolicy.m in Sources */,
 				60C8152B1F62326600CEC5D6 /* AppDelegate.m in Sources */,
-				60C815741F6233C600CEC5D6 /* PBNetService.m in Sources */,
+				60833915207640E400BD565E /* PBService.m in Sources */,
 				60C815701F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */,
 				60C815731F6233C600CEC5D6 /* FLKNetService.m in Sources */,
 				60C815711F6233C600CEC5D6 /* FLKNetCore.m in Sources */,
@@ -687,7 +684,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C818731F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */,
-				60C818751F629B2000CEC5D6 /* PBNetService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1031,7 @@
 				60C8186A1F629A9A00CEC5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60C8186F1F629A9A00CEC5D6 /* Build configuration list for PBXNativeTarget "PBNetRouterTests" */ = {
 			isa = XCConfigurationList;
@@ -1043,6 +1040,7 @@
 				60C8186C1F629A9A00CEC5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
