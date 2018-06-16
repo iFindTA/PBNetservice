@@ -188,13 +188,13 @@ static NSString *kNetworkWorking                    =       @"请稍后...";
 #pragma mark -- handle request pre start
 
 - (BOOL)whetherRequestShouldContinueWithHudEnable:(BOOL)hud {
-    //step 1: check the network state
+    /*step 1: check the network state
     if (![self netvalid]) {
         excuteInMainThread(^{
             [SVProgressHUD showErrorWithStatus:kNetworkDisable];
         });
         return false;
-    }
+    }//*/
     
     //step 2: display the hud while netwoking
     if (hud) {
