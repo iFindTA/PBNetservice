@@ -112,6 +112,18 @@ typedef NS_ENUM(NSUInteger, PBNetState) {
 - (void)PUT:(NSString *)path parameters:(nullable id)params class:(Class _Nullable)cls view:(UIView * _Nullable)view hudEnable:(BOOL)hud success:(void (^)(NSURLSessionDataTask * task,id _Nullable responseObj))success failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * error))failure;
 
 /**
+ Request method throw PATCH
+
+ @param path the uri path for Restful Api
+ @param params for the request
+ @param cls for the request launched by
+ @param view request current view
+ @param success response
+ @param failure response
+ */
+- (void)PATCH:(NSString *)path parameters:(nullable id)params class:(Class _Nullable)cls view:(UIView * _Nullable)view hudEnable:(BOOL)hud success:(void (^)(NSURLSessionDataTask * task,id _Nullable responseObj))success failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * error))failure;
+
+/**
  Request method throw DELETE
  
  @param path the uri path for Restful Api

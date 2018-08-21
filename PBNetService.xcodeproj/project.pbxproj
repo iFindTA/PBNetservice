@@ -33,6 +33,7 @@
 		60C818711F629B2000CEC5D6 /* flk_dev.cer in Resources */ = {isa = PBXBuildFile; fileRef = 60C8155C1F6233C600CEC5D6 /* flk_dev.cer */; };
 		60C818721F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C815601F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.h */; };
 		60C818731F629B2000CEC5D6 /* NSURLSessionTask+PBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C815611F6233C600CEC5D6 /* NSURLSessionTask+PBHelper.m */; };
+		60CCF94B212C15EF00396951 /* PBNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF949212C15EF00396951 /* PBNetService.m */; };
 		C88B902230997B4DAB0D94EB /* libPods-PBNetRouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D625915D2476B926D21E9D1 /* libPods-PBNetRouter.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,8 @@
 		60C8185A1F629A9A00CEC5D6 /* PBNetRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBNetRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C818611F629A9A00CEC5D6 /* PBNetRouterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBNetRouterTests.m; sourceTree = "<group>"; };
 		60C818631F629A9A00CEC5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60CCF949212C15EF00396951 /* PBNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNetService.m; sourceTree = "<group>"; };
+		60CCF94A212C15EF00396951 /* PBNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNetService.h; sourceTree = "<group>"; };
 		62B80142B8BB1876C7740EC2 /* Pods-PBNetService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNetService.release.xcconfig"; path = "Pods/Target Support Files/Pods-PBNetService/Pods-PBNetService.release.xcconfig"; sourceTree = "<group>"; };
 		66121C97DBEAE2FCF786EA8B /* libPods-PBNetService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBNetService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D625915D2476B926D21E9D1 /* libPods-PBNetRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBNetRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +270,7 @@
 		60C815591F6233C600CEC5D6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				60CCF948212C15EF00396951 /* PublicClasses */,
 				60833911207640C500BD565E /* PBService */,
 				60C8155A1F6233C600CEC5D6 /* Assets */,
 				60C8155E1F6233C600CEC5D6 /* Category */,
@@ -339,6 +343,15 @@
 				60C818631F629A9A00CEC5D6 /* Info.plist */,
 			);
 			path = PBNetRouterTests;
+			sourceTree = "<group>";
+		};
+		60CCF948212C15EF00396951 /* PublicClasses */ = {
+			isa = PBXGroup;
+			children = (
+				60CCF949212C15EF00396951 /* PBNetService.m */,
+				60CCF94A212C15EF00396951 /* PBNetService.h */,
+			);
+			path = PublicClasses;
 			sourceTree = "<group>";
 		};
 		9589B12E3B5E19B6AE831F55 /* Frameworks */ = {
@@ -660,6 +673,7 @@
 				60C815731F6233C600CEC5D6 /* FLKNetService.m in Sources */,
 				60C815711F6233C600CEC5D6 /* FLKNetCore.m in Sources */,
 				60C815281F62326500CEC5D6 /* main.m in Sources */,
+				60CCF94B212C15EF00396951 /* PBNetService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

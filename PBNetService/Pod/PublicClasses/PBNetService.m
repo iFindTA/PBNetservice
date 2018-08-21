@@ -184,13 +184,13 @@ static NSString *kNetworkWorking                    =       @"请稍后...";
 #pragma mark -- handle request pre start
 
 - (BOOL)wetherRequestCanContinueWithView:(UIView * _Nullable)view withHudEnable:(BOOL)hud {
-    //step 1: check the network state
+    /*step 1: check the network state
     if (![self netvalid]) {
         excuteInMainThread(^{
             [SVProgressHUD showErrorWithStatus:kNetworkDisable];
         });
         return false;
-    }
+    }//*/
     
     //step 2:check wether there is a view should disable while networking
     if (view != nil) {
@@ -313,6 +313,27 @@ static NSString *kNetworkWorking                    =       @"请稍后...";
     void (^sucessResponse)(NSURLSessionDataTask * _Nonnull, id _Nullable) = [self successOnRequestWithSuccess:success andFailure:failure withInterface:weakView hudEnable:hud];
     void (^failureResponse)(NSURLSessionDataTask * _Nonnull, NSError * _Nonnull) = [self failureOnRequestWithFailure:failure withInterface:weakView hudEnable:hud];
     NSURLSessionDataTask *dataTask = [super PUT:path parameters:params success:sucessResponse failure:failureResponse];
+    //step 5: store the vcr's class charator for canceling action some where.
+    if (cls != nil) {
+        dataTask.pb_taskIdentifier = [NSString stringWithFormat:@"class_%@_request", NSStringFromClass(cls)];
+    }
+}
+
+- (void)PATCH:(NSString *)path parameters:(id)params class:(Class)cls view:(UIView *)view hudEnable:(BOOL)hud success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure {
+    //step 1: check the network state
+    if (![self wetherRequestCanContinueWithView:view withHudEnable:hud]) {
+        //408 request time out!
+        NSError *error = [NSError errorWithDomain:kNetworkDisable code:408 userInfo:nil];
+        if (failure) {
+            failure(nil, error);
+        }
+        return;
+    }
+    __weak typeof(view) weakView = view;
+    //step 4: make url session data task
+    void (^sucessResponse)(NSURLSessionDataTask * _Nonnull, id _Nullable) = [self successOnRequestWithSuccess:success andFailure:failure withInterface:weakView hudEnable:hud];
+    void (^failureResponse)(NSURLSessionDataTask * _Nonnull, NSError * _Nonnull) = [self failureOnRequestWithFailure:failure withInterface:weakView hudEnable:hud];
+    NSURLSessionDataTask *dataTask = [super PATCH:path parameters:params success:sucessResponse failure:failureResponse];
     //step 5: store the vcr's class charator for canceling action some where.
     if (cls != nil) {
         dataTask.pb_taskIdentifier = [NSString stringWithFormat:@"class_%@_request", NSStringFromClass(cls)];
