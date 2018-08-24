@@ -78,7 +78,7 @@ static NSString *kNetworkWorking                    =       @"请稍后...";
         //request serializer, can be set with HTTP's header
         AFJSONRequestSerializer *req_serial = [AFJSONRequestSerializer serializer];
         //req_serial.timeoutInterval = configuration.timeoutInterval;
-        //[req_serial setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        [req_serial setValue:@"application/x-protobuf,application/json,text/html" forHTTPHeaderField:@"Accept"];
         //[req_serial setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         req_serial.HTTPMethodsEncodingParametersInURI = [NSSet setWithObjects:@"GET", @"HEAD", nil];
         self.requestSerializer = req_serial;
