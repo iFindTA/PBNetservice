@@ -76,16 +76,16 @@ static NSString *kNetworkWorking                    =       @"请稍后...";
     self = [super initWithBaseURL:url];
     if (self) {
         //request serializer, can be set with HTTP's header
-        AFJSONRequestSerializer *req_serial = [AFJSONRequestSerializer serializer];
+        AFHTTPRequestSerializer *req_serial = [AFHTTPRequestSerializer serializer];
         //req_serial.timeoutInterval = configuration.timeoutInterval;
         [req_serial setValue:@"application/x-protobuf,application/json,text/html" forHTTPHeaderField:@"Accept"];
-        //[req_serial setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [req_serial setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         req_serial.HTTPMethodsEncodingParametersInURI = [NSSet setWithObjects:@"GET", @"HEAD", nil];
         self.requestSerializer = req_serial;
         //*
         //response serializer, can be set with HTTP's accept type
-        AFJSONResponseSerializer *res_serial = [AFJSONResponseSerializer serializer];
-        //res_serial.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/plain", @"text/javascript",@"text/html", nil];
+        AFHTTPResponseSerializer *res_serial = [AFHTTPResponseSerializer serializer];
+        res_serial.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"application/x-protobuf", @"text/javascript",@"text/plain", nil];
         //res_serial.acceptableStatusCodes = [NSIndexSet indexSetWithIndex:400];
         self.responseSerializer = res_serial;
         //*/
@@ -118,7 +118,6 @@ static NSString *kNetworkWorking                    =       @"请稍后...";
         [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
             [weakSelf updateNetworkState:status];
         }];
-        
     }
     return self;
 }
